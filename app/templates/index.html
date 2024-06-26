@@ -3,9 +3,14 @@
 {% block conteudo %}
 
 <h1>Hello {{nome}}...!</h1>
-<p>
-    Idade: {{dados.idade}} anos. <br>
-    Instrumento: {{dados.instrumento}}
-</p>
+<div>
+    <img class="imgquadrada" src="  {{ url_for('static', filename='img/gol.png') }} " alt="">
+</div>
+<div>
+    <p>
+        Idade: {{dados.idade}} anos. <br>
+        Instrumento: {{dados.instrumento}}
+    </p>
+</div>
 
 {% endblock %}
